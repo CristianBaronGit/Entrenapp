@@ -7,15 +7,19 @@
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/drawable-v24/ic_baseline_lock_24.xml" value="0.168" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/drawable-v24/texto_form.xml" value="0.168" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/layout/activity_ingreso_usuario.xml" value="0.22" />
+        <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/layout/activity_lista_dietas.xml" value="0.33" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/layout/activity_lista_rutinas.xml" value="0.21293532338308457" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/layout/activity_registro_dietas.xml" value="0.33" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/layout/activity_registro_examenmedico.xml" value="0.33" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/layout/activity_registro_rutina.xml" value="0.25" />
-        <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/layout/activity_registro_usuarios.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/layout/activity_registro_usuarios.xml" value="0.33" />
+        <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/layout/lista_item_dieta.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/layout/lista_item_rutina.xml" value="0.22962962962962963" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/menu/overflowdieta.xml" value="0.33" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/menu/overflowexamenmed.xml" value="0.572265625" />
+        <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/menu/overflowlistadietas.xml" value="0.5" />
+        <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/menu/overflowlistarutinas.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Cristian/AndroidStudioProjects/Entrenapp/app/src/main/res/menu/overflowrutina.xml" value="0.25" />
       </map>
     </option>

@@ -29,5 +29,7 @@ public class Rutinas {
     public void setHora_entreno(String hora_entreno) {
         this.hora_entreno = hora_entreno;
     }
+
+
 }
 

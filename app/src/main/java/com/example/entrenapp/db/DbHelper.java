@@ -33,13 +33,13 @@ public class DbHelper extends SQLiteOpenHelper {
 
         sqLiteDatabase.execSQL("create table " + TABLE_DIETAS + "(" +
                 "id_dieta INTEGER primary key autoincrement NOT NULL," +
-                " id_user INTEGER," +
-                " fecha_registro_dieta String," +
-                " desayuno String," +
-                " brunch String," +
-                " lunch String," +
-                " onces String," +
-                " cena String )");
+                "id_user INTEGER," +
+                "fecha_registro_dieta String," +
+                "desayuno String," +
+                "brunch String," +
+                "lunch String," +
+                "onces String," +
+                "cena String )");
 
         sqLiteDatabase.execSQL("create table " + TABLE_RUTINA+ "(" +
                 "id_registro INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,"+

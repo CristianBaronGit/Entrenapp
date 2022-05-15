@@ -184,7 +184,8 @@ public class RegistroRutina extends AppCompatActivity {
         Intent miIntent=null;
         switch(view.getId()){
             case R.id.btnRutinas:
-                //miIntent=new Intent(this, MainActivity2.class);
+                miIntent=new Intent(this, ListaRutinas.class);
+                miIntent.putExtra("id",tviduserrutina.getText().toString());
                 break;
         }
         if (miIntent!=null){

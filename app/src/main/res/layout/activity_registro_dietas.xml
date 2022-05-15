@@ -112,6 +112,7 @@
                         android:layout_weight="1"
                         android:backgroundTint="#4983D8"
                         android:gravity="center"
+                        android:onClick="mostrarCalendario"
                         android:text="Fecha"
                         app:cornerRadius="20dp" />
                 </TableRow>
@@ -242,6 +243,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:backgroundTint="#4983D8"
+            android:onClick="RegistrarDieta"
             android:text="Guardar"
             app:cornerRadius="20dp" />
 
@@ -257,6 +259,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#4983D8"
+            android:onClick="onClick"
             android:text="Mis dietas"
             app:cornerRadius="20dp" />
     </LinearLayout>

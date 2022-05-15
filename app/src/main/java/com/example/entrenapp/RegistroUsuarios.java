@@ -136,17 +136,4 @@ public class RegistroUsuarios extends AppCompatActivity {
         password_user2.setError(null);
     }
 
-    //metodo para moverse entre activitis
-    public void onClick(View view){
-        Intent miIntent=null;
-        switch(view.getId()){
-            case R.id.btnvolverregistro:
-                miIntent=new Intent(this, IngresoUsuario.class);
-                break;
-        }
-        if (miIntent!=null){
-            startActivity(miIntent);
-        }
-    }
-
 }

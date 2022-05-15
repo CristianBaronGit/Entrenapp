@@ -7,173 +7,217 @@
     android:background="#8FBDD3"
     tools:context=".RegistroUsuarios">
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gym" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="REGISTRO DE USUARIOS"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
+        android:text="Registro Usuario Nuevo"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.10" />
 
-    <EditText
-        android:id="@+id/etnombre"
-        android:layout_width="211dp"
-        android:layout_height="31dp"
-        android:background="@drawable/texto_form"
-        android:ems="10"
-        android:hint="Nombre"
-        android:inputType="textPersonName"
-        android:textColor="@color/black"
-        android:textColorHint="#A1A2A3"
+    <LinearLayout
+        android:layout_width="215dp"
+        android:layout_height="424dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintVertical_bias="0.449">
 
-    <EditText
-        android:id="@+id/etapellido"
-        android:layout_width="211dp"
-        android:layout_height="31dp"
-        android:background="@drawable/texto_form"
-        android:ems="10"
-        android:hint="Apellido"
-        android:inputType="textPersonName"
-        android:textColor="@color/black"
-        android:textColorHint="#A1A2A3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="N° Identificacion" />
 
-    <Button
-        android:id="@+id/btnvolverregistro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#4983D8"
-        android:onClick="onClick"
-        android:text="Volver"
-        app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.951" />
+        <EditText
+            android:id="@+id/etIdUser"
+            android:layout_width="211dp"
+            android:layout_height="31dp"
+            android:background="@drawable/texto_form"
+            android:ems="10"
+            android:hint="N° Identificacion"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="#A1A2A3"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
-    <EditText
-        android:id="@+id/etIdUser"
-        android:layout_width="211dp"
-        android:layout_height="31dp"
-        android:background="@drawable/texto_form"
-        android:ems="10"
-        android:hint="N° Identificacion"
-        android:inputType="number"
-        android:textColor="@color/black"
-        android:textColorHint="#A1A2A3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.423"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.116"
-        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/btnregistrarusuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#4983D8"
-        android:onClick="Registrar"
-        android:text="Registrar Usuario"
-        app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592"
-        tools:ignore="TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre" />
 
-    <Button
-        android:id="@+id/btnconsultarusuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#4983D8"
-        android:onClick="Buscar"
-        android:text="Consultar Usuario"
-        app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.944"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592"
-        tools:ignore="TextContrastCheck" />
+        <EditText
+            android:id="@+id/etnombre"
+            android:layout_width="211dp"
+            android:layout_height="31dp"
+            android:background="@drawable/texto_form"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#A1A2A3"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <EditText
-        android:id="@+id/ettelefono"
-        android:layout_width="211dp"
-        android:layout_height="31dp"
-        android:background="@drawable/texto_form"
-        android:ems="10"
-        android:hint="N° Telefono"
-        android:inputType="number"
-        android:textColor="@color/black"
-        android:textColorHint="#A1A2A3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328"
-        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-    <EditText
-        android:id="@+id/etpassword"
-        android:layout_width="211dp"
-        android:layout_height="31dp"
-        android:background="@drawable/texto_form"
-        android:ems="10"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
-        android:textColor="@color/black"
-        android:textColorHint="#A1A2A3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394"
-        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido" />
 
-    <EditText
-        android:id="@+id/etpassword2"
-        android:layout_width="211dp"
-        android:layout_height="31dp"
-        android:background="@drawable/texto_form"
-        android:ems="10"
-        android:hint="Confirmar Contraseña"
-        android:inputType="textPassword"
-        android:textColor="@color/black"
-        android:textColorHint="#A1A2A3"
+        <EditText
+            android:id="@+id/etapellido"
+            android:layout_width="211dp"
+            android:layout_height="31dp"
+            android:background="@drawable/texto_form"
+            android:ems="10"
+            android:hint="Apellido"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="#A1A2A3"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefono" />
+
+        <EditText
+            android:id="@+id/ettelefono"
+            android:layout_width="211dp"
+            android:layout_height="31dp"
+            android:background="@drawable/texto_form"
+            android:ems="10"
+            android:hint="N° Telefono"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="#A1A2A3"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña" />
+
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="211dp"
+            android:layout_height="31dp"
+            android:background="@drawable/texto_form"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#A1A2A3"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirme su contraseña" />
+
+        <EditText
+            android:id="@+id/etpassword2"
+            android:layout_width="211dp"
+            android:layout_height="31dp"
+            android:background="@drawable/texto_form"
+            android:ems="10"
+            android:hint="Confirmar Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#A1A2A3"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="401dp"
+        android:layout_height="91dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.464"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintVertical_bias="0.895">
+
+        <Button
+            android:id="@+id/btnregistrarusuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#4983D8"
+            android:gravity="center"
+            android:onClick="Registrar"
+            android:text="Registrar Usuario"
+            app:cornerRadius="20dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="100dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnconsultarusuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#4983D8"
+            android:gravity="center"
+            android:onClick="Buscar"
+            android:text="Consultar Usuario"
+            app:cornerRadius="20dp"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

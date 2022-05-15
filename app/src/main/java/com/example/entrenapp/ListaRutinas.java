@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.entrenapp.adaptadores.ListaRutinasAdapter;
 import com.example.entrenapp.db.DbRutina;
@@ -17,6 +18,8 @@ import com.example.entrenapp.entidades.Rutinas;
 import java.util.ArrayList;
 
 public class ListaRutinas extends AppCompatActivity {
+
+    private TextView tviduserlistarutinas;
 
     RecyclerView listaRutinas;
     ArrayList<Rutinas> listaArrayRutinas;
@@ -33,6 +36,10 @@ public class ListaRutinas extends AppCompatActivity {
 
         ListaRutinasAdapter adapter = new ListaRutinasAdapter(dbRutina.mostrarRutinas());
         listaRutinas.setAdapter(adapter);
+
+        tviduserlistarutinas=findViewById(R.id.tvIduserlistadieta);
+        String id = getIntent().getStringExtra("id");
+        tviduserlistarutinas.setText(id);
     }
 
     public void onClick(View view){
@@ -48,7 +55,7 @@ public class ListaRutinas extends AppCompatActivity {
     }
     //metodo para mostrar y ocultar el menu del actionbar
     public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.overflowrutina, menu);
+        getMenuInflater().inflate(R.menu.overflowlistarutinas, menu);
         return true;
     }
 
@@ -56,11 +63,17 @@ public class ListaRutinas extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
 
-        if(id == R.id.itemoverflowrutinanuevadieta){
-            Intent iniciosesion = new Intent (this, RegistroRutina.class);
-            startActivity(iniciosesion);
-        }else if (id == R.id.itemocerflowrutinaPrincipal){
+        if(id == R.id.itemoverflowlisarutinaprincipal){
             Intent iniciosesion = new Intent (this, MainActivity.class);
+            iniciosesion.putExtra("id",tviduserlistarutinas.getText().toString());
+            startActivity(iniciosesion);
+        }else if (id == R.id.itemoverflowlistarutinacerrarsesion){
+            Intent iniciosesion = new Intent (this, IngresoUsuario.class);
+            iniciosesion.putExtra("id",tviduserlistarutinas.getText().toString());
+            startActivity(iniciosesion);
+        }else if (id == R.id.itemoverflowlistarutinanuevarutina){
+            Intent iniciosesion = new Intent (this, RegistroRutina.class);
+            iniciosesion.putExtra("id",tviduserlistarutinas.getText().toString());
             startActivity(iniciosesion);
         }
         return super.onOptionsItemSelected(item);

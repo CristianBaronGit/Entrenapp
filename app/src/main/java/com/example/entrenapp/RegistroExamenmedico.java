@@ -32,7 +32,7 @@ public class RegistroExamenmedico extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro_examenmedico);
-        tviduserexamenmed = (TextView) findViewById(R.id.tvIduserexamenmedico);
+        tviduserexamenmed = (TextView) findViewById(R.id.tvIduserlistadieta);
         fechaexamenmedico = (TextView) findViewById(R.id.tvFechaexamenmedico);
         estatura = (EditText) findViewById(R.id.etEstaturaexamenmedico);
         peso = (EditText) findViewById(R.id.etPesoexamenmedico);

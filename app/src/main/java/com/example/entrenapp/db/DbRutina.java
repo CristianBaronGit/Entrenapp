@@ -61,7 +61,7 @@ public class DbRutina extends DbHelper{
         Rutinas rutina = null;
         Cursor cursorRutinas = null;
 
-        cursorRutinas = db.rawQuery("select id_registro,fecha_entreno,hora_entreno from " + TABLE_RUTINA, null);
+        cursorRutinas = db.rawQuery("select id_registro,fecha_entreno,hora_entreno from " + TABLE_RUTINA+ " ORDER BY fecha_entreno desc ", null);
 
         if(cursorRutinas.moveToFirst()){
             do{
