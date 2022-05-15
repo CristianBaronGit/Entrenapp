@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tviduserrutina"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8FBDD3"
+    tools:context=".RegistroRutina">
+
+    <Button
+        android:id="@+id/btnguardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4983D8"
+        android:onClick="Registrar"
+        android:text="Guardar"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/btnRutinas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4983D8"
+        android:onClick="onClick"
+        android:text="Mis rutinas"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toEndOf="@+id/btnguardar"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <LinearLayout
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042">
+
+        <TextView
+            android:id="@+id/tvRutinatitulousuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:text="Usuario: "
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvIdusuariorutina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="343dp"
+        android:layout_height="551dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65999997">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvTitulofechaentrenamiento"
+                        android:layout_width="87dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Fecha entrenamiento" />
+
+                    <TextView
+                        android:id="@+id/tvFechaentrenamiento"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/texto_form"
+                        android:gravity="center"
+                        android:hint="aaaa/mm/dd"
+                        android:textColor="@color/black"
+                        android:textColorHint="#A1A2A3" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#4983D8"
+                        android:gravity="center"
+                        android:onClick="mostrarCalendario"
+                        android:text="Fecha"
+                        android:textSize="8sp"
+                        app:cornerRadius="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvTitulohoraentrenamiento"
+                        android:layout_width="105dp"
+                        android:layout_height="50dp"
+                        android:gravity="center|center_horizontal|center_vertical"
+                        android:text="Hora entrenamiento" />
+
+                    <TextView
+                        android:id="@+id/tvHoraentrenamiento"
+                        android:layout_width="165dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/texto_form"
+                        android:gravity="center"
+                        android:hint="hh:mm"
+                        android:textColor="@color/black"
+                        android:textColorHint="#A1A2A3" />
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="69dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#4983D8"
+                        android:gravity="center"
+                        android:onClick="mostrarHora"
+                        android:text="Hora"
+                        android:textSize="8sp"
+                        app:cornerRadius="20dp" />
+                </TableRow>
+            </TableLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Grupo Muscular a Ejercitar"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbPectorales"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:hint="Pectorales"
+                        android:textColorHint="#A1A2A3" />
+
+                    <CheckBox
+                        android:id="@+id/cbPiernas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:hint="Piernas"
+                        android:textColorHint="#A1A2A3" />
+
+                    <CheckBox
+                        android:id="@+id/cbAbdominales"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:hint="Abdominales"
+                        android:textColorHint="#A1A2A3" />
+
+                    <CheckBox
+                        android:id="@+id/cbDeltoides"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:checked="false"
+                        android:hint="Deltoides"
+                        android:textColorHint="#A1A2A3" />
+
+                    <CheckBox
+                        android:id="@+id/cbTrapecios"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:hint="Trapecios"
+                        android:textColorHint="#A1A2A3" />
+
+                    <CheckBox
+                        android:id="@+id/cbBrazos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:hint="Brazos"
+                        android:textColorHint="#A1A2A3" />
+
+                    <CheckBox
+                        android:id="@+id/cbGluteos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:hint="Gluteos"
+                        android:textColorHint="#A1A2A3" />
+
+                    <CheckBox
+                        android:id="@+id/cbEspalda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:hint="Espalda"
+                        android:textColorHint="#A1A2A3" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gym" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programar Rutina"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

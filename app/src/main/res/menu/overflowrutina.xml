@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemoverflowrutinanuevadieta"
+        android:title="Nueva Dieta" />
+    <item
+        android:id="@+id/itemocerflowrutinaPrincipal"
+        android:icon="@drawable/casa"
+        android:title="Inicio"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemoverflowrutinanuevoexamenmed"
+        android:title="Nuevo Examen Medico" />
+    <item
+        android:id="@+id/itemrutinacerrarsesion"
+        android:title="Cerrar Sesion" ></item>
+</menu>
