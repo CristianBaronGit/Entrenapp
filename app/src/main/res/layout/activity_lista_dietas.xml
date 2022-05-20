@@ -5,21 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#8FBDD3"
-    tools:context=".ListaRutinas">
-
-    <TextView
-        android:id="@+id/tvListarutina"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Programacion de Rutinas"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.50"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.10" />
+    tools:context=".ListaDietas">
 
     <LinearLayout
         android:layout_width="119dp"
@@ -50,7 +36,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView3"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="30dp"
@@ -62,17 +48,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/gym" />
 
+    <TextView
+        android:id="@+id/tvListadietas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Historial Dietas"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.10" />
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/listaRutinas"
+        android:id="@+id/listaDietas"
         android:layout_width="300dp"
-        android:layout_height="200dp"
+        android:layout_height="217dp"
         android:background="@drawable/backgroundlistas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.276" />
-
+        app:layout_constraintVertical_bias="0.295" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-

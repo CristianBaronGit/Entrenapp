@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.entrenapp.db.DbHelper;
@@ -16,6 +17,7 @@ import com.example.entrenapp.db.DbUsuarios;
 
 public class RegistroUsuarios extends AppCompatActivity {
 
+    private TextView tvtitulocontraseña, tvtitulocontraseña2;
     private EditText id_user, nombre_user, apellido_user, telefono_user, password_user,password_user2;
     private Button btnRegistraruser,btnNuevouser,btnActualizaruser,btnEliminaruser;
 
@@ -32,6 +34,8 @@ public class RegistroUsuarios extends AppCompatActivity {
         password_user2=findViewById(R.id.etpassword2);
         btnRegistraruser = (Button) findViewById(R.id.btnregistrarusuario);
         btnNuevouser=(Button) findViewById(R.id.btnregistrarusuario);
+        tvtitulocontraseña= findViewById(R.id.tvRegistrousuariotitulocontraseña);
+        tvtitulocontraseña2=findViewById(R.id.tvregistrousuariotitulocontraseña2);
     }
 
     public void Registrar(View view) {
@@ -105,6 +109,8 @@ public class RegistroUsuarios extends AppCompatActivity {
                 telefono_user.setText(fila.getString(2));
                 password_user.setVisibility(View.INVISIBLE);
                 password_user2.setVisibility(View.INVISIBLE);
+                tvtitulocontraseña.setVisibility(View.INVISIBLE);
+                tvtitulocontraseña2.setVisibility(View.INVISIBLE);
                 BaseDeDatos.close();
                 //btnActualizaruser.setVisibility(View.VISIBLE);
                 //btnEliminaruser.setVisibility(View.VISIBLE);

@@ -67,6 +67,7 @@
             android:id="@+id/imageView"
             android:layout_width="167dp"
             android:layout_height="152dp"
+            android:background="@drawable/texto_form"
             app:srcCompat="@drawable/gym" />
     </LinearLayout>
 

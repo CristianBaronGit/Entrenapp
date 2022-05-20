@@ -135,7 +135,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/textView31"
+            android:id="@+id/tvRegistrousuariotitulocontraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Contraseña" />
@@ -158,7 +158,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:id="@+id/textView27"
+            android:id="@+id/tvregistrousuariotitulocontraseña2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Confirme su contraseña" />

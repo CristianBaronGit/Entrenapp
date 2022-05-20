@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemoverflowlistadietaprincipal"
+        android:icon="@drawable/casa"
+        android:title="Item"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemoverflowlistadietanuevadieta"
+        android:title="Nueva Dieta" />
+    <item
+        android:id="@+id/itemoverflowlistadietacerrarsesion"
+        android:title="Cerrar Sesión" />
+</menu>
